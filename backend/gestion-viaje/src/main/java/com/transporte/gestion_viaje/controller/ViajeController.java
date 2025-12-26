@@ -38,8 +38,6 @@ public class ViajeController {
                     viaje.setProductor(viajeActualizado.getProductor());
                     viaje.setTransportista(viajeActualizado.getTransportista());
 
-                    viaje.setOrigen(viajeActualizado.getOrigen());
-                    viaje.setDestino(viajeActualizado.getDestino());
                     viaje.setKilos(viajeActualizado.getKilos());
 
                     // Asegurate que en tu modelo Viaje.java se llame precioPorTonelada
