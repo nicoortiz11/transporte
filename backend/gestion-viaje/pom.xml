@@ -6,7 +6,8 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.5.9</version>
-        <relativePath/> </parent>
+        <relativePath/>
+    </parent>
     <groupId>com.transporte</groupId>
     <artifactId>gestion-viaje</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -30,6 +31,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -98,5 +105,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
