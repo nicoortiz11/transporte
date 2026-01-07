@@ -1,0 +1,46 @@
+# --- IDEs y Editores ---
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# --- Java / Maven / Gradle ---
+target/
+build/
+.gradle/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# --- Node / Frontend ---
+node_modules/
+dist/
+build/
+.npm/
+*.log
+package-lock.json
+# Nota: Algunos prefieren subir el package-lock, pero en proyectos de práctica suele ser ruido.
+
+# --- Base de Datos ---
+*.sql.gz
+*.sqlite
+# Si usas logs de base de datos
+db/logs/
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secretos (IMPORTANTÍSIMO) ---
+.env
+.env.local
+.env.*.local
+application-local.properties
+application-local.yml
