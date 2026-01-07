@@ -1,14 +1,36 @@
-# --- IDEs y Editores ---
+# =================================================================
+# .gitignore Maestro - Proyecto Transporte
+# =================================================================
+
+# --- IDEs, Editores y Herramientas de Compilación ---
 .idea/
 *.iml
+*.iws
+*.ipr
 .vscode/
+!.vscode/extensions.json
 .classpath
 .project
 .settings/
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 *.sublime-project
 *.sublime-workspace
 
-# --- Java / Maven / Gradle ---
+# --- Java / Maven / Gradle (Backend) ---
+HELP.md
 target/
 build/
 .gradle/
@@ -17,20 +39,33 @@ bin/
 *.jar
 *.war
 *.ear
+.mvn/wrapper/maven-wrapper.jar
+
+# Excepciones para mantener carpetas de compilación específicas si fuera necesario
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 # --- Node / Frontend ---
 node_modules/
 dist/
+dist-ssr
 build/
 .npm/
+# Logs de Node
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 package-lock.json
-# Nota: Algunos prefieren subir el package-lock, pero en proyectos de práctica suele ser ruido.
 
 # --- Base de Datos ---
 *.sql.gz
 *.sqlite
-# Si usas logs de base de datos
 db/logs/
 
 # --- Sistema Operativo ---
@@ -38,9 +73,10 @@ db/logs/
 Thumbs.db
 desktop.ini
 
-# --- Secretos (IMPORTANTÍSIMO) ---
+# --- Secretos y Configuración Local (CRÍTICO) ---
 .env
 .env.local
 .env.*.local
+*.local
 application-local.properties
 application-local.yml
