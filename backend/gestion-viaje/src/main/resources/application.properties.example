@@ -1,0 +1,16 @@
+# --- CONFIGURACIÓN DE BASE DE DATOS (TEMPLATE) ---
+# URL de conexión: reemplazá 'transporte_db' por el nombre de tu base local
+spring.datasource.url=jdbc:postgresql://localhost:5432/TU_BASE_DE_DATOS
+spring.datasource.username=TU_USUARIO
+spring.datasource.password=TU_CONTRASEÑA
+
+# Driver de PostgreSQL
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# --- HIBERNATE / JPA ---
+# 'update' para desarrollo local; en producción se suele usar 'none' o 'validate'
+spring.jpa.hibernate.ddl-auto=update
+
+# Configuración de logs SQL (muy útil para debuguear en Linux)
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true

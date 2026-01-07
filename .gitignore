@@ -78,5 +78,9 @@ desktop.ini
 .env.local
 .env.*.local
 *.local
+# Ignorar el archivo de configuración real de Spring Boot
+**/src/main/resources/application.properties
+# Pero permitir explícitamente el template de ejemplo
+!**/src/main/resources/application.properties.example
 application-local.properties
 application-local.yml
